@@ -4,7 +4,10 @@
   "description": "Bot built with NodeJS for Discord",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node ./build/main.js",
+    "dev": "backpack dev",
+    "build": "backpack build",
+    "postinstall": "backpack build"
   },
   "repository": {
     "type": "git",
@@ -16,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/WillJHaggard/discordjs-node-bot/issues"
   },
-  "homepage": "https://github.com/WillJHaggard/discordjs-node-bot#readme"
+  "homepage": "https://github.com/WillJHaggard/discordjs-node-bot#readme",
+  "devDependencies": {
+    "prettier": "1.11.1"
+  },
+  "dependencies": {
+    "backpack-core": "^0.7.0",
+    "express": "^4.16.2"
+  }
 }
