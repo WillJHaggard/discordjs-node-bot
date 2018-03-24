@@ -74,10 +74,104 @@ module.exports = __webpack_require__(1);
 
 /***/ }),
 /* 1 */
-/***/ (function(module, __webpack_exports__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-console.log('init');
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__settings__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__richEmbeds__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__auth_json__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__auth_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__auth_json__);
+// utilities
+
+// settings and configs
+//import embedColors from './embedColors';
+
+// RichEmbeds
+
+
+// discordjs bot TOKEN
+
+
+Object(__WEBPACK_IMPORTED_MODULE_0__utils__["a" /* log */])(__WEBPACK_IMPORTED_MODULE_1__settings__["a" /* configExample */], __WEBPACK_IMPORTED_MODULE_3__auth_json__["token"]);
+
+/***/ }),
+/* 2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+const log = (...args) => console.log(...args);
+/* harmony export (immutable) */ __webpack_exports__["a"] = log;
+
+
+/***/ }),
+/* 3 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ __webpack_exports__["a"] = (['0xFF0000', //red
+'0x00FF00', //green
+'0xFFFF00', //yellow
+'0xA52A2A', //brown
+'0xFFA500', //orange
+'0x0000FF' //blue
+]);
+
+/***/ }),
+/* 4 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__configExample__ = __webpack_require__(5);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__configExample__["a"]; });
+
+
+
+/***/ }),
+/* 5 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ __webpack_exports__["a"] = ({
+  // configuration, api tokens for steam, etc
+  steamToken: ''
+});
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports) {
+
+module.exports = {"token":""}
+
+/***/ }),
+/* 7 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cross__ = __webpack_require__(8);
+/* unused harmony reexport cross */
+
+
+
+/***/ }),
+/* 8 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_discord_js__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_discord_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_discord_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__embedColors__ = __webpack_require__(3);
+
+
+
+/* unused harmony default export */ var _unused_webpack_default_export = (new __WEBPACK_IMPORTED_MODULE_0_discord_js___default.a.RichEmbed().addField('Crosshair:', 'cl_crosshair_drawoutline "0" \n' + 'cl_crosshair_dynamic_maxdist_splitratio "0.35" \n' + 'cl_crosshair_dynamic_splitalpha_innermod "1" \n' + 'cl_crosshair_dynamic_splitalpha_outermod "0.5" \n' + 'cl_crosshair_dynamic_splitdist "7" \n' + 'cl_crosshair_outlinethickness "1" \n' + 'cl_crosshair_sniper_width "1" \n' + 'cl_crosshairalpha "255" \n' + 'cl_crosshaircolor "1" \n' + 'cl_crosshaircolor_b "0" \n' + 'cl_crosshaircolor_g "0" \n' + 'cl_crosshaircolor_r "255" \n' + 'cl_crosshairdot "0" \n' + 'cl_crosshairgap "-3" \n' + 'cl_crosshairgap_useweaponvalue "0" \n' + 'cl_crosshairscale "0" \n' + 'cl_crosshairsize "2" \n' + 'cl_crosshairstyle "4" \n' + 'cl_crosshairthickness "1" \n' + 'cl_crosshairusealpha "1" \n' + 'cl_fixedcrosshairgap "-4.5" \n', true).addField('Copy Part 1:', 'cl_crosshair_drawoutline 0; cl_crosshair_dynamic_maxdist_splitratio 0.35; cl_crosshair_dynamic_splitalpha_innermod 1; cl_crosshair_dynamic_splitalpha_outermod 0.5; cl_crosshair_dynamic_splitdist 7; cl_crosshair_outlinethickness 1', true).addField('Copy Part 2:', 'cl_crosshaircolor_r 255; cl_crosshairdot 0; cl_crosshairgap -3; cl_crosshairgap_useweaponvalue 0; cl_crosshairscale 0; cl_crosshairsize 2; cl_crosshairstyle 4; cl_crosshairthickness 1; cl_crosshairusealpha 1', true).addField('Copy Part 3:', 'cl_fixedcrosshairgap -4.5; cl_crosshair_sniper_width 1; cl_crosshairalpha 255; cl_crosshaircolor 1; cl_crosshaircolor_b 0; cl_crosshaircolor_g 0', true).setColor(__WEBPACK_IMPORTED_MODULE_1__embedColors__["a" /* default */][Math.floor(Math.random() * __WEBPACK_IMPORTED_MODULE_1__embedColors__["a" /* default */].length)]).setFooter('ENTER PART 1 INTO CONSOLE THEN PRESS ENTER, THEN ENTER PART 2 INTO CONSOLE THEN PRESS ENTER, THEN COPY AND PASTE PART 3 INTO CONSOLE AND PRESS ENTER!'));
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports) {
+
+module.exports = require("discord.js");
 
 /***/ })
 /******/ ]);
