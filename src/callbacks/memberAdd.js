@@ -5,11 +5,11 @@ let welcome = member => `${member.toString()} ${en['Bot.callbacks.memberAdd.welc
 let roleAdded = ({ author: { username } }) =>
   greenLog(`${username} ${en['Bot.callbacks.memberAdd.memberRole']}`);
 
-function findMemeber(member) {
+let addRole = member =>
   member.addRole(member.guild.roles.find('name', 'Members')).then(() => roleAdded(message));
-}
+let sendWelcome = member => member.guild.channels.find('name', 'general').send(welcome(member));
 
 export default function(member) {
-  member.guild.channels.find('name', 'general').send(welcome(member));
-  findMemeber(member);
+  sendWelcome(member);
+  addRole(member);
 }
