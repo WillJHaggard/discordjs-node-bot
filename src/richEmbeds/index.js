@@ -1,2 +1,3 @@
 import cross from './cross';
-export { cross };
+import rules from './rules';
+export { cross, rules };

@@ -1,3 +1,6 @@
+// event classes
+import ready from './callbacks/ready';
+import memberAdd from './callbacks/memberAdd';
 // utilities
 import { greenLog } from './utils';
 // settings and configs
@@ -15,11 +18,7 @@ import Bot from './bot';
 // Servers
 import servers from './servers';
 
-Bot.on('ready', () => {
-  greenLog('----------------------------------------');
-  greenLog('                BOT PAGE                ');
-  greenLog('             BOT NOW ACTIVE             ');
-  greenLog('----------------------------------------');
-});
+Bot.on('ready', ready);
+Bot.on('guildMemberAdd', memberAdd);
 
 Bot.login(token);

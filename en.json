@@ -1,0 +1,10 @@
+{
+  "Bot.callbacks.ready": [
+    "----------------------------------------",
+    "                BOT PAGE                ",
+    "             BOT NOW ACTIVE             ",
+    "----------------------------------------"
+  ],
+  "Bot.callbacks.memberAdd.memberRole": "joined and has been given The Member Role",
+  "Bot.callbacks.memberAdd.welcome": "Welcome To The Server"
+}
