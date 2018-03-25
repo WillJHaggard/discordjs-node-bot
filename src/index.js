@@ -1,4 +1,5 @@
 // event classes
+import message from './callbacks/message';
 import ready from './callbacks/ready';
 import memberAdd from './callbacks/memberAdd';
 // utilities
@@ -20,5 +21,6 @@ import servers from './servers';
 
 Bot.on('ready', ready);
 Bot.on('guildMemberAdd', memberAdd);
+Bot.on('message', message);
 
 Bot.login(token);
